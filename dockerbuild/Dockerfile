@@ -33,7 +33,7 @@ ENV LANG en_US.UTF-8
 ENV LANGUAGE en_US:en
 ENV LC_ALL en_US.UTF-8
 
-RUN apt-get -qq remove ffmpeg
+# RUN apt-get -qq remove ffmpeg
 # remove several traces of python
 RUN apt-get purge -y python.*
 
