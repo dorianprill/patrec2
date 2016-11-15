@@ -64,6 +64,11 @@ RUN pip --no-cache-dir install \
 
         # Copy sample notebooks.
         COPY notebooks /notebooks
+        COPY srez_demo.py /notebooks/
+        COPY srez_input.py /notebooks/
+        COPY srez_main.py /notebooks/
+        COPY srez_model.py /notebooks/
+        COPY srez_train.py /notebooks/
 
         # Jupyter has issues with being run directly:
         #   https://github.com/ipython/ipython/issues/7062
