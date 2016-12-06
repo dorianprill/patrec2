@@ -1,9 +1,0 @@
-navigate to this folder, create an image and give it a name for convenience:
-$ docker build -t patrec .
-
-then run the image with the port for the notebook open
-docker run -it -p 8888:8888 patrec
-
-
-you can now connect to the notebook server from your host machines browser under
-http://localhost:8888

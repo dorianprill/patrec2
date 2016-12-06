@@ -1,5 +1,6 @@
 __pycache__/
-checkpoint*/
-dataset/
-train*/
+notebook/checkpoint*/
+notebooks/dataset/
+notebooks/train*/
+*~
 
