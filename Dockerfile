@@ -55,8 +55,8 @@ RUN pip --no-cache-dir install \
 
         # Install TensorFlow GPU version.
         RUN pip --no-cache-dir install \
-            https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow-0.10.0-cp34-cp34m-linux_x86_64.whl
-
+            #https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow-0.10.0-cp34-cp34m-linux_x86_64.whl
+            https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-0.10.0-cp34-cp34m-linux_x86_64.whl
         # --- ~ DO NOT EDIT OR DELETE BETWEEN THE LINES --- #
 
         # Set up our notebook config.
@@ -69,6 +69,9 @@ RUN pip --no-cache-dir install \
         COPY srez_main.py /notebooks/
         COPY srez_model.py /notebooks/
         COPY srez_train.py /notebooks/
+        COPY dataset dataset
+        COPY train train
+        COPY checkpoint checkpoint
 
         # Jupyter has issues with being run directly:
         #   https://github.com/ipython/ipython/issues/7062
